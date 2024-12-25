@@ -22,7 +22,7 @@ const AuthSection = () => {
   };
   
   return (
-    <div className="container">
+    <div className="container_auth">
       <div className="banner-text">
         <h1>Coding Practice</h1>
         <p>Learn how to code</p>
