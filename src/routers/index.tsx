@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import AuthSection from "../components/AuthSection"
-import CarouselSection from "../components/Carousel";
+import PuzzleSection from "../components/Carousel";
 
 const routerList = [
     {
@@ -14,7 +14,7 @@ const routerList = [
     },
     {
         path: '/carousel',
-        element: <CarouselSection />
+        element: <PuzzleSection />
     },
 ]
 
