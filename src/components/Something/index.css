@@ -31,8 +31,8 @@ form{
     cursor: pointer;
 }
 form input, button{
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     padding: 0;
     border: none;
     background-color: transparent;
