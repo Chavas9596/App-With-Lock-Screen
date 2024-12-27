@@ -1,36 +1,36 @@
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from './ExampleCarouselImage';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const CarouselSection = () => {
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    waitForAnimate: false,
+  };
   return (
-    <Carousel>
-      <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <img src="https://media.istockphoto.com/id/1585613131/photo/autumn-leaves-on-the-fall-blurred-background.webp?s=2048x2048&w=is&k=20&c=a51iBzLJDbUnJZubF3JWU9ytUb67BXs4Zw0ouTCuoRk=" />
+        </div>
+        <div>
+          <img src="https://media.istockphoto.com/id/841380450/photo/autumn-in-the-white-mountains-of-new-hampshire.webp?s=2048x2048&w=is&k=20&c=lCrZpa08MBivWf9veR_QnfdSFNTbXYoyZVOhjg6qkM0=" />
+        </div>
+        <div>
+          <img src="https://media.istockphoto.com/id/1585613131/photo/autumn-leaves-on-the-fall-blurred-background.webp?s=2048x2048&w=is&k=20&c=a51iBzLJDbUnJZubF3JWU9ytUb67BXs4Zw0ouTCuoRk=" />
+        </div>
+        <div>
+          <img src="https://media.istockphoto.com/id/841380450/photo/autumn-in-the-white-mountains-of-new-hampshire.webp?s=2048x2048&w=is&k=20&c=lCrZpa08MBivWf9veR_QnfdSFNTbXYoyZVOhjg6qkM0=" />
+        </div>
+      </Slider>
+    </div>
   );
-}
+};
 
 export default CarouselSection;

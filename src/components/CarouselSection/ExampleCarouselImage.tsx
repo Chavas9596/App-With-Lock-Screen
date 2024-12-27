@@ -6,7 +6,7 @@ interface CarouselImageProps {
 
 const imageStyle = {
   width: "100%",
-  height: "100vh"
+  height: "100vh",
 };
 
 const ExampleCarouselImage: React.FC<CarouselImageProps> = ({ text }) => {
